@@ -1,0 +1,11 @@
+interface:
+  display_name: "DaVinci Resolve 動画編集"
+  short_description: "Resolve 21.1でローカル動画のカット・速度変更・字幕・クロスフェードを編集"
+  default_prompt: "$davinci-resolve-edit を使い、指定したローカル動画をDaVinci Resolveでカット・トリム・タイムリマップ・字幕追加・クロスフェード編集してください。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "davinci_resolve"
+      description: "DaVinci ResolveのネイティブMCP"
+policy:
+  allow_implicit_invocation: true
